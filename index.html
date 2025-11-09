@@ -18,13 +18,15 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fff5f7;
         }
 
         header {
-            background: #f8f9fa;
+            background: #fce4ec;
             padding: 20px 0;
             margin-bottom: 40px;
             border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         nav ul {
@@ -36,13 +38,16 @@
 
         nav a {
             text-decoration: none;
-            color: #2c3e50;
+            color: #880e4f;
             font-weight: bold;
             transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
         nav a:hover {
-            color: #e74c3c;
+            color: #ad1457;
+            background-color: #f8bbd0;
         }
 
         section {
@@ -50,20 +55,21 @@
             padding: 30px;
             background: white;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         #about {
             text-align: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #f8bbd0 0%, #f48fb1 100%);
+            color: #4a148c;
             padding: 50px 30px;
         }
 
         #about h2 {
             font-size: 2.5em;
             margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+            color: #880e4f;
         }
 
         #about p {
@@ -72,27 +78,41 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            color: #4a148c;
+        }
+
+        #about .subsection {
+            background: rgba(255, 255, 255, 0.7);
+            border-left: 4px solid #ad1457;
+        }
+
+        #about .subsection-title {
+            color: #880e4f;
+        }
+
+        #about .subsection p {
+            color: #6a1b9a;
         }
 
         h2 {
-            color: #2c3e50;
+            color: #880e4f;
             margin-bottom: 30px;
             font-size: 2em;
-            border-bottom: 2px solid #3498db;
+            border-bottom: 2px solid #f48fb1;
             padding-bottom: 10px;
         }
 
         .subsection {
             margin: 30px 0;
             padding: 25px;
-            background: #f8f9fa;
+            background: #fce4ec;
             border-radius: 8px;
-            border-left: 4px solid #3498db;
+            border-left: 4px solid #f48fb1;
         }
 
         .subsection-title {
             font-weight: bold;
-            color: #2c3e50;
+            color: #880e4f;
             font-size: 1.3em;
             margin-bottom: 15px;
             display: block;
@@ -108,8 +128,10 @@
             text-align: center;
             margin-top: 50px;
             padding: 20px;
-            color: #7f8c8d;
-            border-top: 1px solid #bdc3c7;
+            color: #ad1457;
+            border-top: 1px solid #f8bbd0;
+            background-color: #fce4ec;
+            border-radius: 10px;
         }
 
         @media (max-width: 768px) {
@@ -143,8 +165,7 @@
     <main>
         <section id="about">
             <h2>Завтрак без границ</h2>
-            <p>Каждое воскресенье у пользователей «Самоката» будет возможность приобрести уникальный брекфаст-бокс</p>
-            <p>с рецептом и ингредиентами для приготовления национального блюда недели, с любовью отобранного нашей командой из кухонь народов мира</p>
+            <p>Каждое воскресенье у пользователей «Самоката» будет возможность приобрести уникальный брекфаст-бокс с рецептом и ингредиентами для приготовления национального блюда недели, с любовью отобранного нашей командой из кухонь народов мира</p>
             <div class="subsection">
                 <span class="subsection-title">Главная идея спецпроекта:</span>
                 <p>воскресные завтраки из разных уголков мира!</p>
@@ -198,7 +219,26 @@
 
         <section id="naming">
             <h2>Нейминг и образ проекта</h2>
-            <p>Ценности, архетип, теглайн и метафора</p>
+            
+            <div class="subsection">
+                <span class="subsection-title">1. Теглайн</span>
+                <p>Завтрак – это маленькое гастрономическое путешествие прямо у вас на кухне</p>
+            </div>
+
+            <div class="subsection">
+                <span class="subsection-title">2. Метафора</span>
+                <p>Завтрак — это путешествие без чемоданов</p>
+            </div>
+
+            <div class="subsection">
+                <span class="subsection-title">3. Архетип</span>
+                <p>Искатель — тоска по раю</p>
+            </div>
+
+            <div class="subsection">
+                <span class="subsection-title">4. Ценности</span>
+                <p>Для нас важны качество, свежесть и разнообразие, и именно эти ценности лежат в основе каждого нашего завтрака</p>
+            </div>
         </section>
     </main>
 
