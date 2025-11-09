@@ -1,9 +1,133 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>завтрак без границ</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Завтрак без границ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #f8f9fa;
+            padding: 20px 0;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        section {
+            margin-bottom: 60px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        #about {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 30px;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        #about p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .subsection {
+            margin: 30px 0;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .subsection-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7f8c8d;
+            border-top: 1px solid #bdc3c7;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            section {
+                padding: 20px;
+                margin-bottom: 40px;
+            }
+            
+            #about h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,52 +145,57 @@
             <h2>Завтрак без границ</h2>
             <p>Каждое воскресенье у пользователей «Самоката» будет возможность приобрести уникальный брекфаст-бокс</p>
             <p>с рецептом и ингредиентами для приготовления национального блюда недели, с любовью отобранного нашей командой из кухонь народов мира</p>
-            <br>
-            <p><b>Главная идея спецпроекта:<b> воскресные завтраки из разных уголков мира!</p>
-            <br>
+            <div class="subsection">
+                <span class="subsection-title">Главная идея спецпроекта:</span>
+                <p>воскресные завтраки из разных уголков мира!</p>
+            </div>
         </section>
+
         <section id="brending">
             <h2>Брендинг</h2>
-            <p><b>1. Суть<p><b>
-            <p>«завтрак без границ» – это новый гастрономический опыт</p>
-            <p>и уникальные впечатления прямо у вас на кухнеp</p>
-            <br>
-            <p><b>2. Миссия<p><b>
-            <p>подарить возможность каждому пользователю совершить путешествие, не выходя из дома,</p>
-            <p>и объединить за одним столом близких, свежие продукты и новые вкусовые предпочтения</p>
-            <br>
-            <p><b>3. Роль<p><b>
-            <p>мы берем на себя ответственность за комфортное путешествие наших покупателей, как экскурсовод,</p>
-            <p>который заботится о том, чтобы каждый путешественник получил максимум удовольствия и новых знаний</p>
-            <br>
-            <br>
-            <br>
-            <p><b>Характер спецпроекта<p><b>
-            <p>любознательный, заботливый, соверменный</p>
-            <br>
-            <br>
-            <br>
-            <p><b>Reason to buy<p><b>
-            <p>RTB — качество</p>
-            <p>Все продукты, входящие в брекфаст-боксы, проходят строгий контроль качества и доставляются только от надежных производителей, что гарантирует их свежесть и безопасность</p>
-            <br>
-            <p>RTB — культурный и гастрономический опыт</p>
-            <p>Рецепты для завтраков создаются профессиональными поварами, которые обучались в кулинарных школах и специализируются на разных кулинарных традициях</p>
-            <br>
-            <p>RTB — удобство</p>
-            <p>В брекфаст-боксе все продукты уже подготовлены и расфасованы, а доставка займет всего 10-15 минут</p>
-            <br>
-            <p>RTB — эмоции</p>
-            <p>Отзывы довольных покупателей на главной странице, фото готовых блюд и историй о том, как завтрак сделал их день лучше</p>
-            <br>
-            <br>
-            <br>
-            <p><b>Ключевое сообщение<p><b>
-            <p>Наш бокс — это вкусная еда, яркие впечатления,</p>
-            <p>увлекательные культурные и исторические факты и время, проведенное с близкими людьми.</p>
-            <p>Бокс напоминает маленькое гастрономическое путешествие, которое начинается прямо у вас на кухне.</p>
-            <br>
+            
+            <div class="subsection">
+                <span class="subsection-title">1. Суть</span>
+                <p>«Завтрак без границ» – это новый гастрономический опыт и уникальные впечатления прямо у вас на кухне</p>
+            </div>
+
+            <div class="subsection">
+                <span class="subsection-title">2. Миссия</span>
+                <p>Подарить возможность каждому пользователю совершить путешествие, не выходя из дома, и объединить за одним столом близких, свежие продукты и новые вкусовые предпочтения</p>
+            </div>
+
+            <div class="subsection">
+                <span class="subsection-title">3. Роль</span>
+                <p>Мы берем на себя ответственность за комфортное путешествие наших покупателей, как экскурсовод, который заботится о том, чтобы каждый путешественник получил максимум удовольствия и новых знаний</p>
+            </div>
+
+            <div class="subsection">
+                <span class="subsection-title">Характер спецпроекта</span>
+                <p>Любознательный, заботливый, современный</p>
+            </div>
+
+            <div class="subsection">
+                <span class="subsection-title">Reason to buy</span>
+                <p><strong>RTB — качество</strong><br>
+                Все продукты, входящие в брекфаст-боксы, проходят строгий контроль качества и доставляются только от надежных производителей, что гарантирует их свежесть и безопасность</p>
+                
+                <p><strong>RTB — культурный и гастрономический опыт</strong><br>
+                Рецепты для завтраков создаются профессиональными поварами, которые обучались в кулинарных школах и специализируются на разных кулинарных традициях</p>
+                
+                <p><strong>RTB — удобство</strong><br>
+                В брекфаст-боксе все продукты уже подготовлены и расфасованы, а доставка займет всего 10-15 минут</p>
+                
+                <p><strong>RTB — эмоции</strong><br>
+                Отзывы довольных покупателей на главной странице, фото готовых блюд и историй о том, как завтрак сделал их день лучше</p>
+            </div>
+
+            <div class="subsection">
+                <span class="subsection-title">Ключевое сообщение</span>
+                <p>Наш бокс — это вкусная еда, яркие впечатления, увлекательные культурные и исторические факты и время, проведенное с близкими людьми.</p>
+                <p>Бокс напоминает маленькое гастрономическое путешествие, которое начинается прямо у вас на кухне.</p>
+            </div>
         </section>
+
         <section id="naming">
             <h2>Нейминг и образ проекта</h2>
             <p>Ценности, архетип, теглайн и метафора</p>
@@ -74,7 +203,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 "завтрак без границ"</p>
+        <p>&copy; 2025 "Завтрак без границ"</p>
     </footer>
 </body>
 </html>
