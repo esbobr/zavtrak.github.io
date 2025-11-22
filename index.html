@@ -1,13 +1,79 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" itemscope itemtype="https://schema.org/WebSite">
 <head>
+    <!-- Яндекс.Метрика -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.webvisor.org/metrika/tag_ww.js?id=105461511', 'ym');
+        
+        ym(105461511, 'init', {
+            ssr:true,
+            webvisor:true,
+            trackHash:true,
+            clickmap:true,
+            ecommerce:"dataLayer",
+            accurateTrackBounce:true,
+            trackLinks:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105461511" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Основные метатеги -->
     <title>Завтрак без границ - Гастрономические путешествия на вашей кухне</title>
     <meta name="description" content="Завтрак без границ - воскресные брекфаст-боксы с рецептами и ингредиентами национальных блюд со всего мира. Гастрономическое путешествие на вашей кухне!">
-    <meta name="keywords" content="завтрак, брекфаст-бокс, рецепты, гастрономия, кулинария, Самокат, воскресный завтрак">
+    <meta name="keywords" content="завтрак, брекфаст-бокс, рецепты, гастрономия, кулинария, Самокат, воскресный завтрак, доставка еды">
     <meta name="author" content="Завтрак без границ">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ваш-логин.github.io/breakfast-project">
+    
+    <!-- Open Graph метатеги -->
+    <meta property="og:title" content="Завтрак без границ - Гастрономические путешествия на вашей кухне">
+    <meta property="og:description" content="Воскресные брекфаст-боксы с рецептами и ингредиентами национальных блюд со всего мира">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ваш-логин.github.io/breakfast-project">
+    <meta property="og:image" content="https://ваш-логин.github.io/breakfast-project/images/breakfast-main.jpg">
+    <meta property="og:site_name" content="Завтрак без границ">
+    
+    <!-- Twitter Card метатеги -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Завтрак без границ - Гастрономические путешествия">
+    <meta name="twitter:description" content="Воскресные брекфаст-боксы с национальными блюдами мира">
+    <meta name="twitter:image" content="https://ваш-логин.github.io/breakfast-project/images/breakfast-main.jpg">
+    
+    <!-- Дополнительные метатеги -->
+    <meta name="theme-color" content="#880e4f">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Schema.org структурированные данные -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FoodService",
+        "name": "Завтрак без границ",
+        "description": "Сервис доставки воскресных брекфаст-боксов с национальными блюдами со всего мира",
+        "url": "https://ваш-логин.github.io/breakfast-project",
+        "logo": "https://ваш-логин.github.io/breakfast-project/images/brand-visual-identity.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Москва",
+            "addressCountry": "RU"
+        },
+        "servesCuisine": ["Международная", "Национальная"],
+        "openingHours": "Su 09:00-12:00",
+        "sameAs": []
+    }
+    </script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -40,6 +106,47 @@
                 #f2cdd8 60%, 
                 #ebb9c9 100%);
             min-height: 100vh;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--accent);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Стили для Яндекс.Метрики информер */
+        .metrika-informer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .metrika-informer:hover {
+            opacity: 1;
+        }
+
+        .metrika-informer a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .metrika-informer img {
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
 
         header {
@@ -97,7 +204,7 @@
             background-clip: text;
         }
 
-        section {
+        article, section {
             margin-bottom: 70px;
             padding: 40px;
             background: rgba(255, 255, 255, 0.85);
@@ -110,7 +217,7 @@
             overflow: hidden;
         }
 
-        section::before {
+        article::before, section::before {
             content: '';
             position: absolute;
             top: 0;
@@ -120,7 +227,7 @@
             background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
         }
 
-        section:hover {
+        article:hover, section:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(136, 14, 79, 0.2);
         }
@@ -293,7 +400,7 @@
             }
         }
 
-        section, .subsection {
+        article, section, .subsection {
             animation: fadeInUp 0.6s ease-out;
         }
 
@@ -310,7 +417,7 @@
                 padding: 15px;
             }
             
-            section {
+            article, section {
                 padding: 25px;
                 margin-bottom: 50px;
             }
@@ -335,6 +442,12 @@
             .subsection {
                 padding: 20px;
             }
+
+            .metrika-informer {
+                bottom: 10px;
+                right: 10px;
+                transform: scale(0.8);
+            }
         }
 
         @media (max-width: 480px) {
@@ -354,8 +467,14 @@
                 font-size: 1.8em;
             }
             
-            section {
+            article, section {
                 padding: 20px 15px;
+            }
+
+            .metrika-informer {
+                bottom: 5px;
+                right: 5px;
+                transform: scale(0.7);
             }
         }
 
@@ -391,14 +510,27 @@
         }
     </style>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <!-- Яндекс.Метрика информер -->
+    <div class="metrika-informer">
+        <a href="https://metrika.yandex.ru/stat/?id=105461511&amp;from=informer" target="_blank" rel="nofollow">
+            <img src="https://metrika-informer.com/informer/105461511/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+                 style="width:88px; height:31px; border:0;"
+                 alt="Яндекс.Метрика"
+                 title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" />
+        </a>
+    </div>
+
     <!-- Декоративные элементы фона -->
     <div class="floating-element"></div>
     <div class="floating-element"></div>
     <div class="floating-element"></div>
 
-    <header>
-        <nav aria-label="Основная навигация">
+    <!-- Кнопка пропуска для доступности -->
+    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+        <nav role="navigation" aria-label="Основная навигация по сайту">
             <ul>
                 <li><a href="#about">О проекте</a></li>
                 <li><a href="#brending">Брендинг</a></li>
@@ -408,18 +540,18 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Завтрак без границ<br><small style="font-size: 0.6em; font-weight: 400;">Гастрономическое путешествие на вашей кухне</small></h1>
+    <main id="main-content" role="main">
+        <h1 itemprop="headline">Завтрак без границ<br><small style="font-size: 0.6em; font-weight: 400;">Гастрономическое путешествие на вашей кухне</small></h1>
         
-        <section id="about">
+        <section id="about" itemscope itemtype="https://schema.org/AboutPage">
             <h2>Завтрак без границ</h2>
             
-            <figure class="image-container">
-                <img src="images/breakfast-main.jpg" alt="Яркий разнообразный завтрак с свежими фруктами, натуральным йогуртом, хрустящими тостами и ароматным кофе, красиво сервированный на деревянном столе">
-                <figcaption class="image-caption">Пример сервировки воскресного завтрака от нашего проекта</figcaption>
+            <figure class="image-container" itemscope itemtype="https://schema.org/ImageObject">
+                <img src="images/breakfast-main.jpg" alt="Яркий разнообразный завтрак с свежими фруктами, натуральным йогуртом, хрустящими тостами и ароматным кофе, красиво сервированный на деревянном столе" itemprop="image">
+                <figcaption class="image-caption" itemprop="caption">Пример сервировки воскресного завтрака от нашего проекта</figcaption>
             </figure>
             
-            <p>Каждое воскресенье у пользователей «Самоката» будет возможность приобрести уникальный брекфаст-бокс</p>
+            <p itemprop="description">Каждое воскресенье у пользователей «Самоката» будет возможность приобрести уникальный брекфаст-бокс</p>
             <p>с рецептом и ингредиентами для приготовления национального блюда недели, с любовью отобранного нашей командой из кухонь народов мира</p>
             <div class="subsection">
                 <span class="subsection-title">Главная идея спецпроекта:</span>
@@ -427,10 +559,10 @@
             </div>
         </section>
 
-        <section id="brending">
-            <h2>Брендинг</h2>
+        <article id="brending" itemscope itemtype="https://schema.org/Article">
+            <h2 itemprop="headline">Брендинг</h2>
             
-            <div class="subsection">
+            <div class="subsection" itemprop="articleBody">
                 <span class="subsection-title">1. Суть</span>
                 <p>«Завтрак без границ» – это новый гастрономический опыт и уникальные впечатления прямо у вас на кухне</p>
             </div>
@@ -471,16 +603,16 @@
                 <p>Бокс напоминает маленькое гастрономическое путешествие, которое начинается прямо у вас на кухне.</p>
             </div>
             
-            <figure class="image-container">
-                <img src="images/brand-visual-identity.png" alt="Визуальная идентичность бренда Завтрак без границ: логотип, цветовая палитра в розовых тонах, примеры типографики и фирменные элементы дизайна">
-                <figcaption class="image-caption">Фирменный стиль и визуальная идентичность проекта</figcaption>
+            <figure class="image-container" itemscope itemtype="https://schema.org/ImageObject">
+                <img src="images/brand-visual-identity.png" alt="Визуальная идентичность бренда Завтрак без границ: логотип, цветовая палитра в розовых тонах, примеры типографики и фирменные элементы дизайна" itemprop="image">
+                <figcaption class="image-caption" itemprop="caption">Фирменный стиль и визуальная идентичность проекта</figcaption>
             </figure>
-        </section>
+        </article>
 
-        <section id="naming">
-            <h2>Нейминг и образ проекта</h2>
+        <article id="naming" itemscope itemtype="https://schema.org/Article">
+            <h2 itemprop="headline">Нейминг и образ проекта</h2>
             
-            <div class="subsection">
+            <div class="subsection" itemprop="articleBody">
                 <span class="subsection-title">1. Теглайн</span>
                 <p>Завтрак – это маленькое гастрономическое путешествие прямо у вас на кухне</p>
             </div>
@@ -499,24 +631,26 @@
                 <span class="subsection-title">4. Ценности</span>
                 <p>Для нас важны качество, свежесть и разнообразие, и именно эти ценности лежат в основе каждого нашего завтрака</p>
             </div>
-        </section>
+        </article>
 
-        <section id="video">
-            <h2>Видеопрезентация проекта</h2>
+        <section id="video" itemscope itemtype="https://schema.org/VideoObject">
+            <h2 itemprop="name">Видеопрезентация проекта</h2>
             
             <figure class="video-container">
-                <video controls width="800" aria-label="Видеопрезентация проекта Завтрак без границ">
+                <video controls width="800" aria-label="Видеопрезентация проекта Завтрак без границ" itemprop="video">
                     <source src="images/project-presentation.mp4" type="video/mp4">
                     Ваш браузер не поддерживает воспроизведение видео.
                 </video>
-                <figcaption class="video-caption">Презентация концепции проекта "Завтрак без границ"</figcaption>
+                <figcaption class="video-caption" itemprop="caption">Презентация концепции проекта "Завтрак без границ"</figcaption>
             </figure>
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
         <p>&copy; 2025 "Завтрак без границ". Все права защищены.</p>
         <p>Сайт опубликован на GitHub Pages</p>
+        <meta itemprop="copyrightYear" content="2025">
+        <meta itemprop="copyrightHolder" content="Завтрак без границ">
     </footer>
 </body>
 </html>
