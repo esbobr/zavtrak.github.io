@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Завтрак без границ</title>
+    <title>Завтрак без границ - Гастрономические путешествия на вашей кухне</title>
+    <meta name="description" content="Завтрак без границ - воскресные брекфаст-боксы с рецептами и ингредиентами национальных блюд со всего мира. Гастрономическое путешествие на вашей кухне!">
+    <meta name="keywords" content="завтрак, брекфаст-бокс, рецепты, гастрономия, кулинария, Самокат, воскресный завтрак">
+    <meta name="author" content="Завтрак без границ">
+    <link rel="canonical" href="https://ваш-логин.github.io/breakfast-project">
     <style>
         * {
             margin: 0;
@@ -94,6 +98,13 @@
             color: #6a1b9a;
         }
 
+        h1 {
+            color: #880e4f;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.2em;
+        }
+
         h2 {
             color: #880e4f;
             margin-bottom: 30px;
@@ -153,6 +164,25 @@
             font-size: 1.1em;
         }
 
+        .video-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .video-caption {
+            margin-top: 15px;
+            font-style: italic;
+            color: #880e4f;
+            font-size: 1.1em;
+        }
+
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
@@ -167,29 +197,39 @@
             #about h2 {
                 font-size: 2em;
             }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.6em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Основная навигация">
             <ul>
                 <li><a href="#about">О проекте</a></li>
                 <li><a href="#brending">Брендинг</a></li>
                 <li><a href="#naming">Нейминг и образ проекта</a></li>
+                <li><a href="#video">Видеопрезентация</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <h1>Завтрак без границ - Гастрономическое путешествие на вашей кухне</h1>
+        
         <section id="about">
             <h2>Завтрак без границ</h2>
             
-            <!-- Картинка после заголовка -->
-            <div class="image-container">
-                <img src="images/breakfast-main.jpg" alt="Завтрак без границ - главное изображение">
-                <div class="image-caption">Вариант сервировки завтрака</div>
-            </div>
+            <figure class="image-container">
+                <img src="images/breakfast-main.jpg" alt="Яркий разнообразный завтрак с свежими фруктами, натуральным йогуртом, хрустящими тостами и ароматным кофе, красиво сервированный на деревянном столе">
+                <figcaption class="image-caption">Пример сервировки воскресного завтрака от нашего проекта</figcaption>
+            </figure>
             
             <p>Каждое воскресенье у пользователей «Самоката» будет возможность приобрести уникальный брекфаст-бокс</p>
             <p>с рецептом и ингредиентами для приготовления национального блюда недели, с любовью отобранного нашей командой из кухонь народов мира</p>
@@ -243,11 +283,10 @@
                 <p>Бокс напоминает маленькое гастрономическое путешествие, которое начинается прямо у вас на кухне.</p>
             </div>
             
-            <!-- Картинка в конце блока брендинг -->
-            <div class="image-container">
-                <img src="images/brand-visual-identity.png" alt="Визуальная идентичность бренда">
-                <div class="image-caption">Примеры визуальной идентичности проекта</div>
-            </div>
+            <figure class="image-container">
+                <img src="images/brand-visual-identity.png" alt="Визуальная идентичность бренда Завтрак без границ: логотип, цветовая палитра в розовых тонах, примеры типографики и фирменные элементы дизайна">
+                <figcaption class="image-caption">Фирменный стиль и визуальная идентичность проекта</figcaption>
+            </figure>
         </section>
 
         <section id="naming">
@@ -277,19 +316,19 @@
         <section id="video">
             <h2>Видеопрезентация проекта</h2>
             
-            <!-- Видео в конце сайта -->
-            <div class="video-container">
-                <video controls width="800">
+            <figure class="video-container">
+                <video controls width="800" aria-label="Видеопрезентация проекта Завтрак без границ">
                     <source src="images/project-presentation.mp4" type="video/mp4">
                     Ваш браузер не поддерживает воспроизведение видео.
                 </video>
-                <div class="video-caption">Видеопрезентация проекта "Завтрак без границ"</div>
-            </div>
+                <figcaption class="video-caption">Презентация концепции проекта "Завтрак без границ"</figcaption>
+            </figure>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 "Завтрак без границ"</p>
+        <p>&copy; 2025 "Завтрак без границ". Все права защищены.</p>
+        <p>Сайт опубликован на GitHub Pages</p>
     </footer>
 </body>
 </html>
